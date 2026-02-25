@@ -1,0 +1,5 @@
+{
+  "name": "Excel BOM Matcher",
+  "description": "Tool di riconciliazione tra Distinta Base e Database Componenti. Verifica codici, revisioni e sincronizza i dati automaticamente.",
+  "requestFramePermissions": []
+}
