@@ -36,6 +36,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check build output
+        run: |
+          ls -R dist
+          if [ ! -f dist/index.html ]; then
+            echo "Error: dist/index.html not found"
+            exit 1
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

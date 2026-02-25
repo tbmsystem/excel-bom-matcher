@@ -149,7 +149,7 @@ const App: React.FC = () => {
       return Object.entries(filters).every(([key, filterValue]) => {
         if (!filterValue) return true;
         const colIdx = parseInt(key);
-        const cellValue = String(row[colIdx] || '').toLowerCase();
+        const cellValue = String((row as any)[colIdx] || '').toLowerCase();
         return cellValue.includes(filterValue.toLowerCase());
       });
     });
