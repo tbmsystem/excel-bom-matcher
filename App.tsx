@@ -1,4 +1,5 @@
 
+// Versione Pro - Build per GitHub Actions
 import React, { useState, useMemo } from 'react';
 import { ArrowRight, Download, RefreshCw, Database, FileText, CheckCircle2, FilePlus, Terminal, Filter } from 'lucide-react';
 import Dropzone from './components/Dropzone';
