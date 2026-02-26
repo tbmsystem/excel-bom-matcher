@@ -14,7 +14,7 @@ const App: React.FC = () => {
   const [sourceFiles, setSourceFiles] = useState<FileList | null>(null);
 
   // New State for paths with persistence
-  const [sourcePath, setSourcePath] = useState<string>(() => localStorage.getItem('tbm_source_path') || "");
+  const [sourcePath, setSourcePath] = useState<string>(() => localStorage.getItem('tbm_source_path') || "\\\\10.232.44.30\\Risorse\\REPOSITORY");
   const [targetPath, setTargetPath] = useState<string>(() => localStorage.getItem('tbm_target_path') || "C:\\Tavole");
 
   // Persist paths to localStorage
@@ -289,7 +289,7 @@ const App: React.FC = () => {
                         type="text"
                         value={sourcePath}
                         onChange={(e) => setSourcePath(e.target.value)}
-                        placeholder="es. Z:\Progetti\Disegni Condivisi"
+                        placeholder="es. \\10.232.44.30\Risorse\REPOSITORY"
                         className="w-full px-3 py-2 text-sm border border-slate-200 rounded-md focus:ring-1 focus:ring-blue-400 outline-none transition-all placeholder:text-slate-300"
                       />
                       <p className="text-[10px] text-gray-400 mt-1 italic">
